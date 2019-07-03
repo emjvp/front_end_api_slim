@@ -1,0 +1,309 @@
+@import url(/components/Font-Awesome/web-fonts-with-css/css/fontawesome-all.min.css);
+@import url(../../administracion/fuentes/fuentes.css);
+*{
+    font-family: 'open_sans';
+}
+.inicio{
+	background: url("/skins/page/images/Andormeda.jpg") no-repeat ;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+img{
+	max-width: 100%;
+}
+header .header-redes{
+	background: #333333;
+}
+header .header-redes .red{
+	display: inline-block;
+	margin: 5px;
+	color: #FFFFFF;
+}
+
+header .header-redes .red i{
+	padding: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	background: #FFFFFF;
+	color: #333333;
+	width: 25px;
+	text-align: center;
+	border-radius: 5em;
+}
+header .header-redes .red:hover{
+	text-decoration: none;
+}
+header .header-redes .red:hover i{
+	background: #000000;
+	color: #FFFFFF;
+}
+header .header-content {
+	height: 80px;
+	background: #CCCCCC;
+}
+header .header-content .logo{
+	max-height: 80px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+header .header-content nav ul{
+	display: table;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+header .header-content nav ul li{
+	display: table-cell;
+	width: 20%;
+	position: relative;
+}
+
+header .header-content nav ul li a{
+	display: table;
+	width: 100%;
+	color: #333333;
+}
+
+header .header-content nav ul li a span{
+	display: table-cell;
+	vertical-align: middle;
+	height: 80px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+}
+
+
+
+header .header-content nav ul li:hover  a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+
+/* estilos contenidos */
+
+.fondo-left-top {
+	background-position: left top;
+}
+.fondo-left-center {
+	background-position: left center;
+}
+.fondo-left-bottom {
+	background-position: left bottom;
+}
+
+.fondo-right-top {
+	background-position: right top;
+}
+.fondo-right-center {
+	background-position: right center;
+}
+.fondo-right-bottom {
+	background-position: right bottom;
+}
+
+.fondo-center-top {
+	background-position: center top;
+}
+.fondo-center-center {
+	background-position: center center;
+}
+.fondo-center-bottom {
+	background-position: center bottom;
+}
+
+.fondo-repetido{
+	background-repeat: repeat; 
+}
+.fondo-sinrepetir{
+	background-repeat: no-repeat; 
+}
+
+.fondo-expandido{
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.fondo-fijo{
+	background-attachment: fixed;
+}
+
+
+.slider-simple .content-caption{
+	color: #000000;
+	padding: 20px;
+	border-radius: 0.5em;
+}
+
+.slider-simple .content-caption h2{
+	color: #000000;
+	font-weight: 700;
+	margin:0;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.contenedor-seccion{
+	background: no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.contenedor-seccion .descripcion-seccion{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.contenedor-seccion .fixed{
+	background-position: fixed ;
+}
+
+.caja-contenido-simple{
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 0.5em;
+}
+
+.caja-contenido-simple h2{
+	font-weight: bold;
+}
+
+.caja-contenido-simple .imagen-contenido{
+	display: table;
+	width: 100%;
+}
+
+.caja-contenido-simple .imagen-contenido div{
+	display: table-cell;
+	height: 180px;
+	text-align: center;
+	vertical-align: middle;
+	border:1px solid #CCCCCC;
+	background-color: #EEEEEE;
+}
+
+.caja-contenido-simple .imagen-contenido div img{
+	 max-width: 100%;
+	 max-height: 100%;
+}
+
+.btn-vermas{
+	background: #000000;
+	color: #FFFFFF;
+	border:1px solid #000000;
+}
+.btn-vermas:hover{
+	background: #FFFFFF;
+	color: #000000;
+}
+
+
+.carouselsection .caja-contenido-simple{
+	padding: 10px;
+	border-radius: 0em;
+}
+
+.con-espacios .carouselsection .caja-contenido-simple{
+	margin: 10px;
+}
+
+.con-espacios .carouselsection{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.fondo-video-youtube {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+  }
+
+.banner-video-youtube {
+	position: absolute;
+	top: -80%;
+	left: -80%;
+	z-index: 1;
+	margin: auto;
+	opacity: 1;
+	width: 260%;
+	height: 260%;
+}
+
+.fondo-imagen{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 500px;
+	background:  no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slider-principal .carousel-caption{
+	color: #000000;
+	padding: 20px;
+	border-radius: 0.5em;
+	display:block;
+	text-align: center;
+	width: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.padding-content{
+	padding-top: 200px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.humanos .padding-content, .humanos-faccion .padding-content{
+	padding-top: 20px;
+}
+.titulo, .subtitulo, .introduccion, .descripcion{
+	text-align: center;
+}
+.humanos .descripcion{
+	padding-bottom: 50px;
+}
+.humanos .caja{
+	color: #333333;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	padding: 10px;
+}
+.humanos-faccion .faccion .descripcion{
+	padding-bottom: 50px;
+}
+.humanos a{
+	color: #333333;	
+}
+.humanos-faccion .caja .descripcion-interna{
+	padding-top: 10px;
+	
+}
+.humanos a:hover{
+	color: #333333;
+	text-decoration: none;	
+}
+.inicio .titulo, .inicio .subtitulo, .inicio .introduccion, .inicio .descripcion{
+	color: #FFFFFF;	
+	text-align: center;
+	text-shadow: 2px 2px 2px #333333;
+}
+
