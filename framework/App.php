@@ -30,10 +30,10 @@ class App
         $controller->$action();
         $controller->render();
     }
-    public static function getDbConnection()
+    /*public static function getDbConnection()
     {
         return Db_Connection::getInstance();
-    }
+    }*/
 
 	public function run()
     {

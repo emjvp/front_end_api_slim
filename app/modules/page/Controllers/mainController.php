@@ -12,9 +12,9 @@ class Page_mainController extends Controllers_Abstract
 	public function init()
 	{
 		$this->setLayout('page_page');
-		$this->template = new Page_Model_Template_Template($this->_view);
+		/*$this->template = new Page_Model_Template_Template($this->_view);
 		$infopageModel = new Page_Model_DbTable_Informacion();
-		$this->_view->infopage = $infopageModel->getById(1);
+		$this->_view->infopage = $infopageModel->getById(1);*/
 		$header = $this->_view->getRoutPHP('modules/page/Views/partials/header.php');
 		$this->getLayout()->setData("header",$header);
 		$footer = $this->_view->getRoutPHP('modules/page/Views/partials/footer.php');

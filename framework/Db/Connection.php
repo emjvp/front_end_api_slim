@@ -20,7 +20,7 @@ final class Db_Connection
         $this->_port = Config_Config::getInstance()->getValue('db/port');
     }
 
-    public function getConnection()
+    /*public function getConnection()
     {
         if (null == $this->_conn) {
             $this->_conn = new mysqli($this->_host, $this->_user, $this->_password, $this->_dbname, $this->_port);
@@ -44,5 +44,5 @@ final class Db_Connection
             self::$_instance = new Db_Connection();
         }
         return self::$_instance;
-    }
+    }*/
 }

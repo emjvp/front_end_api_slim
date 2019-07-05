@@ -1,12 +1,16 @@
 <div class="container">
-    <h1 class="titulo-principal">Bienvenidos a la aplicacion de HOTELES HT DE COLOMBIA</h1>
-        <div class="row">
-            <div class="col-9">
-            <?php                                                                
+    <div class="row">
+    <form action="/page/editarhotel/editar" method="put" >
+                <div class="col-9">
+                    <?php
+                        
                         if($this->response_hoteles != "No existen registros" ){
                     ?>
                         <table>
-                            <tr>                               
+                            <tr>
+                                <th>
+                                    indicador
+                                </th>
                                 <th>
                                     Hotel
                                 </th>
@@ -30,7 +34,9 @@
                                     <tr>
                                     <?php foreach ($hotel as $key => $value) {
                                                 if($key == "id_hote"){?>
-                                                
+                                                <td>
+                                                    <input type="radio" name="id" value="<?php echo $value?>">                                                                                       
+                                                </td>
                                                 <?php
 
                                                 }else{
@@ -49,23 +55,15 @@
                             echo $this->response_hoteles;
                         }
                     ?>
-        </div>
-    <div class="col-3">
-    <ul>
-        <li>
-            <span class="button"><a href="/page/crearhotel">Crear</a></span>
-        </li>
-        <li>
-            <span class="button"><a href="/page/editarhotel">Editar</a></span>
-        </li>
-        <li>
-            <span class="button"><a href="/page/eliminarhotel">Eliminar</a></span>
-        </li>
-        <li>
-            <span class="button"><a href="/page/habitaciones">Habitaciones</a></span>
-        </li>
-    </ul>
-                        
-    </div>
-        </div>
+            </div>
+    
+        <input type="" name="nombre" placeholder="Nombre Hotel">
+        <input type="" name="ciudad" placeholder="Ciudad">
+        <input type="number" name="cant_hab" placeholder="Cantidad de Habitaciones">
+        <input type="" name="nit" placeholder="Nit Hotel">
+        <input type="" name="direccion" placeholder="Direccion">
+        <input type="" name="nit" placeholder="Nit Hotel">
+        <input type="submit">
+    </form>
+    <a href="/">Atrás</a>
 </div>

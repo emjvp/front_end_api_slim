@@ -1,5 +1,5 @@
 <?php
-define('DEFAULT_TITLE', 'Proyecto');// titulo general para toda la pagina
+define('DEFAULT_TITLE', 'HOTELES HT DE COLOMBIA');// titulo general para toda la pagina
 
 $config = array(); //
 

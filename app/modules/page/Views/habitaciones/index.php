@@ -1,12 +1,13 @@
 <div class="container">
-    <h1 class="titulo-principal">Bienvenidos a la aplicacion de HOTELES HT DE COLOMBIA</h1>
-        <div class="row">
-            <div class="col-9">
-            <?php                                                                
+    <div class="row">
+    <div class="col-9">
+                    <?php
+                        
                         if($this->response_hoteles != "No existen registros" ){
                     ?>
                         <table>
-                            <tr>                               
+                            <tr>
+                                
                                 <th>
                                     Hotel
                                 </th>
@@ -49,23 +50,26 @@
                             echo $this->response_hoteles;
                         }
                     ?>
-        </div>
-    <div class="col-3">
+            </div>
+            <div class="col-3">
     <ul>
         <li>
-            <span class="button"><a href="/page/crearhotel">Crear</a></span>
+            <span class="button"><a href="/page/crearhabitacion">Crear</a></span>
         </li>
         <li>
-            <span class="button"><a href="/page/editarhotel">Editar</a></span>
+            <span class="button"><a href="/page/editarhabitacion">Editar</a></span>
         </li>
         <li>
-            <span class="button"><a href="/page/eliminarhotel">Eliminar</a></span>
+            <span class="button"><a href="/page/eliminarhabitacion">Eliminar</a></span>
         </li>
         <li>
-            <span class="button"><a href="/page/habitaciones">Habitaciones</a></span>
+            <span class="button"><a href="/page/hoteles">Hoteles</a></span>
         </li>
     </ul>
                         
     </div>
-        </div>
+    
+    </div>
 </div>
+                
+    

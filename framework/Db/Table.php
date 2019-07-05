@@ -8,7 +8,7 @@ abstract class Db_Table
 
     function __construct()
     {
-        $this->_conn = App::getDbConnection();
+   //     $this->_conn = App::getDbConnection();
         if ($this->_name == '') {
             throw new Exception('Table name not set');
         }
@@ -17,7 +17,7 @@ abstract class Db_Table
 
     public function getById($id)
     {
-        $res = $this->_conn->query('SELECT * FROM '.$this->_name.' WHERE '.$this->_id.' = "'.$id.'"')->fetchAsObject();
+       /*$res = $this->_conn->query('SELECT * FROM '.$this->_name.' WHERE '.$this->_id.' = "'.$id.'"')->fetchAsObject();*/
         if(isset($res[0])){
             return $res[0];
         }
